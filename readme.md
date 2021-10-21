@@ -1,5 +1,7 @@
 # Base64
 
+## Demo
+
 ```cpp
 
 #include <modp_b64.h>
@@ -44,4 +46,20 @@ int main(){
     return 0;
 }
 
+```
+
+## Usage
+
+```
+//Root.CMakeLists.txt
+add_subdirectory(modp_b64)
+install(TARGETS modp_b64)
+```
+```
+//Demo.CMakeLists.txt
+target_link_libraries(Demo
+    PUBLIC
+    PRIVATE
+        modp_b64
+)
 ```
